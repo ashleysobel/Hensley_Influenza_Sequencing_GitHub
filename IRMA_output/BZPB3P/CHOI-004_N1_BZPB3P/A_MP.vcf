@@ -1,0 +1,42 @@
+##fileformat=VCFv4.2
+##fileDate=20250715
+##source=/Users/ashleysobelleonard/code/flu-amd/IRMA_RES/scripts/vcfGenerator.pl -C 2 -F 0.008 -I 0.005 -D 0.005 -Q 24 -T 100 -M 0.80 -S 0.999 -A /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-004_N1_BZPB3P-eBThwhKM0YIpqTSbUscpwtz2baQRhnhY/A_MP.fasta /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-004_N1_BZPB3P-eBThwhKM0YIpqTSbUscpwtz2baQRhnhY/A_MP-allAlleles.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-004_N1_BZPB3P-eBThwhKM0YIpqTSbUscpwtz2baQRhnhY/A_MP-insertions.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-004_N1_BZPB3P-eBThwhKM0YIpqTSbUscpwtz2baQRhnhY/A_MP-deletions.txt
+##reference=/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-004_N1_BZPB3P-eBThwhKM0YIpqTSbUscpwtz2baQRhnhY/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=DPI,Number=.,Type=Integer,Description="Total Insertion Depth">
+##INFO=<ID=DPD,Number=.,Type=Integer,Description="Total Deletion Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AQ,Number=A,Type=Float,Description="Average Allele Quality">
+##INFO=<ID=QUB,Number=A,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##INFO=<ID=PUB,Number=.,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=dp100,Description="Minimum Total Coverage Depth 100">
+##FILTER=<ID=cnt2,Description="Minimum Minority Allele Count 2">
+##FILTER=<ID=q24,Description="Minimum Minority Allele Average Quality 24">
+##FILTER=<ID=fins0.005000,Description="Minimum Insertion Frequency 0.005000">
+##FILTER=<ID=fdel0.005000,Description="Minimum Deletion Frequency 0.005000">
+##FILTER=<ID=conf0.800000,Description="Minimum Confidence (Proportion not Machine Error) 0.800000">
+##FILTER=<ID=sigP99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=sigQ99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##FILTER=<ID=fsnv0.022191,Description="(AUTO) Minority Allele Frequency Lower Bound 0.022191">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	21	.	CG	C	.	PASS	DP=711;DPD=711;AF=0.0239099859;AQ=.;PUB=0.0083681642;
+A_MP	53	.	GC	G	.	PASS	DP=716;DPD=716;AF=0.0223463687;AQ=.;PUB=0.0083100294;
+A_MP	100	.	GGAA	G,GA	.	PASS	DP=719,719;AF=0.0083449235,0.0111265647;AQ=.,.;PUB=0.0082755347,0.0000000000;
+A_MP	189	.	GT	G	.	PASS	DP=720;DPD=720;AF=0.0097222222;AQ=.;PUB=0.0082641000;
+A_MP	255	.	T	TG	.	PASS	DP=726;DPI=726;AF=0.0165289256;AQ=27.25;PUB=0.0081961500;QUB=0.0125700734
+A_MP	269	.	CG	C	.	PASS	DP=722;DPD=722;AF=0.0138504155;AQ=.;PUB=0.0082413251;
+A_MP	270	.	G	GA	.	PASS	DP=722;DPI=722;AF=0.0249307479;AQ=24.33;PUB=0.0082413251;QUB=0.0160819796
+A_MP	308	.	TC	T	.	PASS	DP=727;DPD=726;AF=0.0123966942;AQ=.;PUB=0.0081961500;
+A_MP	309	.	CA	C,CAA	.	PASS	DP=726;DPD=726;DPI=726;AF=0.0344352617,0.0123966942;AQ=.,31.78;PUB=0.0081961500,0.0081961500;,0.0098957700
+A_MP	330	.	TG	T	.	PASS	DP=727;DPD=727;AF=0.0137551582;AQ=.;PUB=0.0081849335;
+A_MP	526	.	GA	G	.	PASS	DP=731;DPD=731;AF=0.0259917921;AQ=.;PUB=0.0081403728;
+A_MP	686	.	TA	T	.	PASS	DP=738;DPD=738;AF=0.0121951220;AQ=.;PUB=0.0080635481;
+A_MP	700	.	C	CT	.	PASS	DP=739;DPI=739;AF=0.0148849797;AQ=30.27;PUB=0.0080526913;QUB=0.0103900686
+A_MP	702	.	TG	T	.	PASS	DP=738;DPD=738;AF=0.0081300813;AQ=.;PUB=0.0080635481;
+A_MP	761	.	CCT	C	.	PASS	DP=739;DPD=739;AF=0.0500676590;AQ=.;PUB=0.0080526913;
+A_MP	765	.	TC	T	.	PASS	DP=739;DPD=739;AF=0.0148849797;AQ=.;PUB=0.0080526913;
+A_MP	816	.	CT	C	.	PASS	DP=740;DPD=740;AF=0.0108108108;AQ=.;PUB=0.0080418638;
+A_MP	824	.	CT	C,CTT	.	PASS	DP=739;DPD=739;DPI=739;AF=0.0135317997,0.0094722598;AQ=.,36.71;PUB=0.0080526913,0.0080526913;,0.0086277858
+A_MP	865	.	GA	G,GAA	.	PASS	DP=739;DPD=739;DPI=739;AF=0.0175913396,0.0175913396;AQ=.,32.00;PUB=0.0080526913,0.0080526913;,0.0096714878
+A_MP	894	.	CT	C	.	PASS	DP=737;DPD=737;AF=0.0108548168;AQ=.;PUB=0.0080744341;
+A_MP	905	.	AG	A	.	PASS	DP=736;DPD=736;AF=0.0230978261;AQ=.;PUB=0.0080853496;

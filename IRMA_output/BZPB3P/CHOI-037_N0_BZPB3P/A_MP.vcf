@@ -1,0 +1,38 @@
+##fileformat=VCFv4.2
+##fileDate=20250715
+##source=/Users/ashleysobelleonard/code/flu-amd/IRMA_RES/scripts/vcfGenerator.pl -C 2 -F 0.008 -I 0.005 -D 0.005 -Q 24 -T 100 -M 0.80 -S 0.999 -A /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-037_N0_BZPB3P-EayD3zC3ab8ihjVV2IX8ezBv4tWWfj5h/A_MP.fasta /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-037_N0_BZPB3P-EayD3zC3ab8ihjVV2IX8ezBv4tWWfj5h/A_MP-allAlleles.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-037_N0_BZPB3P-EayD3zC3ab8ihjVV2IX8ezBv4tWWfj5h/A_MP-insertions.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-037_N0_BZPB3P-EayD3zC3ab8ihjVV2IX8ezBv4tWWfj5h/A_MP-deletions.txt
+##reference=/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-037_N0_BZPB3P-EayD3zC3ab8ihjVV2IX8ezBv4tWWfj5h/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=DPI,Number=.,Type=Integer,Description="Total Insertion Depth">
+##INFO=<ID=DPD,Number=.,Type=Integer,Description="Total Deletion Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AQ,Number=A,Type=Float,Description="Average Allele Quality">
+##INFO=<ID=QUB,Number=A,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##INFO=<ID=PUB,Number=.,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=dp100,Description="Minimum Total Coverage Depth 100">
+##FILTER=<ID=cnt2,Description="Minimum Minority Allele Count 2">
+##FILTER=<ID=q24,Description="Minimum Minority Allele Average Quality 24">
+##FILTER=<ID=fins0.005000,Description="Minimum Insertion Frequency 0.005000">
+##FILTER=<ID=fdel0.005000,Description="Minimum Deletion Frequency 0.005000">
+##FILTER=<ID=conf0.800000,Description="Minimum Confidence (Proportion not Machine Error) 0.800000">
+##FILTER=<ID=sigP99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=sigQ99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##FILTER=<ID=fsnv0.026846,Description="(AUTO) Minority Allele Frequency Lower Bound 0.026846">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	21	.	CG	C	.	PASS	DP=568;DPD=568;AF=0.0123239437;AQ=.;PUB=0.0104612391;
+A_MP	105	.	GA	G	.	PASS	DP=577;DPD=577;AF=0.0121317158;AQ=.;PUB=0.0102991090;
+A_MP	261	.	TG	T	.	PASS	DP=584;DPD=584;AF=0.0102739726;AQ=.;PUB=0.0101764410;
+A_MP	269	.	CG	C	.	PASS	DP=585;DPD=585;AF=0.0119658120;AQ=.;PUB=0.0101591552;
+A_MP	309	.	CA	C,CAA	.	PASS	DP=585;DPD=585;DPI=585;AF=0.0478632479,0.0188034188;AQ=.,30.45;PUB=0.0101591552,0.0101591552;,0.0124443255
+A_MP	526	.	GA	G	.	PASS	DP=589;DPD=589;AF=0.0118845501;AQ=.;PUB=0.0100905950;
+A_MP	566	.	TG	T	.	PASS	DP=588;DPD=588;AF=0.0102040816;AQ=.;PUB=0.0101076481;
+A_MP	583	.	TC	T	.	PASS	DP=589;DPD=589;AF=0.0118845501;AQ=.;PUB=0.0100905950;
+A_MP	621	.	TA	T	.	PASS	DP=591;DPD=591;AF=0.0169204738;AQ=.;PUB=0.0100566608;
+A_MP	686	.	TA	T	.	PASS	DP=593;DPD=593;AF=0.0303541315;AQ=.;PUB=0.0100229540;
+A_MP	702	.	TG	T	.	PASS	DP=593;DPD=593;AF=0.0118043845;AQ=.;PUB=0.0100229540;
+A_MP	761	.	CCT	C	.	PASS	DP=596;DPD=596;AF=0.0486577181;AQ=.;PUB=0.0099728155;
+A_MP	765	.	TC	T	.	PASS	DP=596;DPD=596;AF=0.0134228188;AQ=.;PUB=0.0099728155;
+A_MP	824	.	CT	C,CTT	.	PASS	DP=596;DPD=596;DPI=596;AF=0.0100671141,0.0167785235;AQ=.,34.00;PUB=0.0099728155,0.0099728155;,0.0110293790
+A_MP	865	.	GA	G,GAA	.	PASS	DP=595;DPD=595;DPI=595;AF=0.0218487395,0.0201680672;AQ=.,27.17;PUB=0.0099894725,0.0099894725;,0.0145306693
+A_MP	882	.	CG	C	.	PASS	DP=596;DPD=596;AF=0.0151006711;AQ=.;PUB=0.0099728155;
+A_MP	895	.	TG	T	.	PASS	DP=596;DPD=596;AF=0.0100671141;AQ=.;PUB=0.0099728155;

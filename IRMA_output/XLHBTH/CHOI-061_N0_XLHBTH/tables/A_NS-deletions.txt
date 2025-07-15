@@ -1,0 +1,2 @@
+Reference_Name	Upstream_Position	Length	Context	Called	Count	Total	Frequency	PairedUB
+A_NS	627	1	AGAAT-GGGGA	FALSE	3	25	0.12	0.210921996862086

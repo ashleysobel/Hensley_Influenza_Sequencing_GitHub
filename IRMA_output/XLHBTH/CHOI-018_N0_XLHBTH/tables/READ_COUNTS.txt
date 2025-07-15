@@ -1,0 +1,6 @@
+Record	Reads	Patterns	PairsAndWidows
+1-initial	1591	NA	NA
+2-failQC	100	NA	NA
+2-passQC	1491	1490	NA
+3-chimeric	0	0	NA
+3-nomatch	1491	1490	NA

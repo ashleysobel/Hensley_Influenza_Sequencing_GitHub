@@ -1,0 +1,45 @@
+##fileformat=VCFv4.2
+##fileDate=20250715
+##source=/Users/ashleysobelleonard/code/flu-amd/IRMA_RES/scripts/vcfGenerator.pl -C 2 -F 0.008 -I 0.005 -D 0.005 -Q 24 -T 100 -M 0.80 -S 0.999 -A /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/A_NS.fasta /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/A_NS-allAlleles.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/A_NS-insertions.txt /tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/A_NS-deletions.txt
+##reference=/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=DPI,Number=.,Type=Integer,Description="Total Insertion Depth">
+##INFO=<ID=DPD,Number=.,Type=Integer,Description="Total Deletion Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AQ,Number=A,Type=Float,Description="Average Allele Quality">
+##INFO=<ID=QUB,Number=A,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##INFO=<ID=PUB,Number=.,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=dp100,Description="Minimum Total Coverage Depth 100">
+##FILTER=<ID=cnt2,Description="Minimum Minority Allele Count 2">
+##FILTER=<ID=q24,Description="Minimum Minority Allele Average Quality 24">
+##FILTER=<ID=fins0.005000,Description="Minimum Insertion Frequency 0.005000">
+##FILTER=<ID=fdel0.005000,Description="Minimum Deletion Frequency 0.005000">
+##FILTER=<ID=conf0.800000,Description="Minimum Confidence (Proportion not Machine Error) 0.800000">
+##FILTER=<ID=sigP99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=sigQ99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##FILTER=<ID=fsnv0.020457,Description="(AUTO) Minority Allele Frequency Lower Bound 0.020457">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	43	.	CT	C	.	PASS	DP=829;DPD=829;AF=0.0398069964;AQ=.;PUB=0.0071823644;
+A_NS	80	.	TG	T	.	PASS	DP=831;DPD=831;AF=0.0072202166;AQ=.;PUB=0.0071651555;
+A_NS	88	.	GC	G	.	PASS	DP=831;DPD=831;AF=0.0216606498;AQ=.;PUB=0.0071651555;
+A_NS	99	.	CG	C	.	PASS	DP=831;DPD=831;AF=0.0228640193;AQ=.;PUB=0.0071651555;
+A_NS	118	.	CA	C	.	PASS	DP=831;DPD=831;AF=0.0072202166;AQ=.;PUB=0.0071651555;
+A_NS	128	.	TA	T,TAA	.	PASS	DP=830;DPD=830;DPI=830;AF=0.0337349398,0.0168674699;AQ=.,31.07;PUB=0.0071737496,0.0071737496;,0.0091316539
+A_NS	137	.	G	A	.	PASS	DP=830;AF=0.1024096386;AQ=42.72;PUB=0.0071737496;QUB=0.0073215284
+A_NS	162	.	CA	C	.	PASS	DP=830;DPD=830;AF=0.0072289157;AQ=.;PUB=0.0071737496;
+A_NS	207	.	GA	G,GAA	.	PASS	DP=831;DPD=831;DPI=831;AF=0.0950661853,0.0144404332;AQ=.,35.50;PUB=0.0071651555,0.0071651555;,0.0079161276
+A_NS	222	.	CGA	C	.	PASS	DP=831;DPD=831;AF=0.0072202166;AQ=.;PUB=0.0071651555;
+A_NS	231	.	TA	T	.	PASS	DP=831;DPD=830;AF=0.0072289157;AQ=.;PUB=0.0071737496;
+A_NS	257	.	C	CT	.	PASS	DP=830;DPI=830;AF=0.0108433735;AQ=33.89;PUB=0.0071737496;QUB=0.0082431651
+A_NS	298	.	CGA	C	.	PASS	DP=828;DPD=828;AF=0.0096618357;AQ=.;PUB=0.0071909999;
+A_NS	325	.	CA	C	.	PASS	DP=831;DPD=831;AF=0.0156438026;AQ=.;PUB=0.0071651555;
+A_NS	332	.	TA	T	.	PASS	DP=831;DPD=831;AF=0.0072202166;AQ=.;PUB=0.0071651555;
+A_NS	429	.	CT	C	.	PASS	DP=832;DPD=832;AF=0.0072115385;AQ=.;PUB=0.0071565819;
+A_NS	459	.	GGGA	G	.	PASS	DP=831;DPD=831;AF=0.0084235860;AQ=.;PUB=0.0071651555;
+A_NS	534	.	TG	T	.	PASS	DP=830;DPD=830;AF=0.0096385542;AQ=.;PUB=0.0071737496;
+A_NS	605	.	CT	C	.	PASS	DP=829;DPD=829;AF=0.0072376357;AQ=.;PUB=0.0071823644;
+A_NS	661	.	G	GA	.	PASS	DP=829;DPI=829;AF=0.0084439083;AQ=41.29;PUB=0.0071823644;QUB=0.0073871216
+A_NS	668	.	CG	C	.	PASS	DP=829;DPD=829;AF=0.0168878166;AQ=.;PUB=0.0071823644;
+A_NS	678	.	TG	T	.	PASS	DP=829;DPD=829;AF=0.0132689988;AQ=.;PUB=0.0071823644;
+A_NS	743	.	GA	G	.	PASS	DP=829;DPD=829;AF=0.0096501809;AQ=.;PUB=0.0071823644;
+A_NS	753	.	TC	T	.	PASS	DP=830;DPD=830;AF=0.0072289157;AQ=.;PUB=0.0071737496;

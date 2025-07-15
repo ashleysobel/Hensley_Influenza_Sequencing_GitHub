@@ -1,0 +1,18 @@
+Total Score	Alignment
+1284725	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_HA_H1.sam
+1284725	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_HA_H1.sam
+1172178	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_MP.sam
+1172178	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_MP.sam
+325413	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_NA_N1.sam
+326815	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_NA_N1.sam
+326815	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F3-A_NA_N1.sam
+404532	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_NP.sam
+404532	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_NP.sam
+1357768	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_NS.sam
+1357768	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_NS.sam
+71203	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_PA.sam
+67657	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_PA.sam
+79830	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_PB1.sam
+79803	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_PB1.sam
+138879	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F1-A_PB2.sam
+138879	/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-034_N0_XLHBTH-2TI254nXkfgOdqkXyE4wlyCbP6tOvyWY/ASSEMBLY/F2-A_PB2.sam

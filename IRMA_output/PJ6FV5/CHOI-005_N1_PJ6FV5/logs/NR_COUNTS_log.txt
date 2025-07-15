@@ -1,0 +1,14 @@
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R1.match:314
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R2.match:0
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R1.nomatch:8475
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R2.nomatch:8475
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R1.chim:7
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/MATCH/R2.chim:0
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/R0.fa:8796
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_HA_H1.fa:55
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_MP.fa:112
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_NA_N1.fa:19
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_NP.fa:28
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_NS.fa:54
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_PB1.fa:16
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N1_PJ6FV5-xTezaH0WfI5wfhdVGhEy1Esa4mSput4e/ASSEMBLY/A_PB2.fa:24

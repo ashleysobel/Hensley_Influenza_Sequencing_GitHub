@@ -1,0 +1,28 @@
+##fileformat=VCFv4.2
+##fileDate=20250715
+##source=/Users/ashleysobelleonard/code/flu-amd/IRMA_RES/scripts/vcfGenerator.pl -C 2 -F 0.008 -I 0.005 -D 0.005 -Q 24 -T 100 -M 0.80 -S 0.999 -A /tmp/ashleysobelleonard/IRMAv1.2.0/B24-033_BZPB3P-7c8ujM3BWtRGrdFVGKeHNxaW8sjH5clD/A_HA_H3.fasta /tmp/ashleysobelleonard/IRMAv1.2.0/B24-033_BZPB3P-7c8ujM3BWtRGrdFVGKeHNxaW8sjH5clD/A_HA_H3-allAlleles.txt /tmp/ashleysobelleonard/IRMAv1.2.0/B24-033_BZPB3P-7c8ujM3BWtRGrdFVGKeHNxaW8sjH5clD/A_HA_H3-insertions.txt /tmp/ashleysobelleonard/IRMAv1.2.0/B24-033_BZPB3P-7c8ujM3BWtRGrdFVGKeHNxaW8sjH5clD/A_HA_H3-deletions.txt
+##reference=/tmp/ashleysobelleonard/IRMAv1.2.0/B24-033_BZPB3P-7c8ujM3BWtRGrdFVGKeHNxaW8sjH5clD/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=DPI,Number=.,Type=Integer,Description="Total Insertion Depth">
+##INFO=<ID=DPD,Number=.,Type=Integer,Description="Total Deletion Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AQ,Number=A,Type=Float,Description="Average Allele Quality">
+##INFO=<ID=QUB,Number=A,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##INFO=<ID=PUB,Number=.,Type=Float,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=dp100,Description="Minimum Total Coverage Depth 100">
+##FILTER=<ID=cnt2,Description="Minimum Minority Allele Count 2">
+##FILTER=<ID=q24,Description="Minimum Minority Allele Average Quality 24">
+##FILTER=<ID=fins0.005000,Description="Minimum Insertion Frequency 0.005000">
+##FILTER=<ID=fdel0.005000,Description="Minimum Deletion Frequency 0.005000">
+##FILTER=<ID=conf0.800000,Description="Minimum Confidence (Proportion not Machine Error) 0.800000">
+##FILTER=<ID=sigP99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on paired error estimate">
+##FILTER=<ID=sigQ99.9,Description="Second-order corrected 99.9% binomial confidence upper bound on quality error estimate">
+##FILTER=<ID=fsnv0.017021,Description="(AUTO) Minority Allele Frequency Lower Bound 0.017021">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	203	.	GC	G	.	PASS	DP=235;DPD=235;AF=0.0255319149;AQ=.;PUB=0.0250560884;
+A_HA_H3	405	.	G	T	.	PASS	DP=235;AF=0.0851063830;AQ=33.10;PUB=0.0250560884;QUB=0.0263603824
+A_HA_H3	764	.	CG	C	.	PASS	DP=235;DPD=235;AF=0.0340425532;AQ=.;PUB=0.0250560884;
+A_HA_H3	971	.	AC	A	.	PASS	DP=234;DPD=234;AF=0.0256410256;AQ=.;PUB=0.0251615172;
+A_HA_H3	1056	.	G	A	.	PASS	DP=246;AF=0.0528455285;AQ=29.85;PUB=0.0239521249;QUB=0.0266462126
+A_HA_H3	1075	.	TG	T	.	PASS	DP=267;DPD=267;AF=0.0749063670;AQ=.;PUB=0.0220937716;
+A_HA_H3	1393	.	G	GA	.	PASS	DP=275;DPI=275;AF=0.0327272727;AQ=33.78;PUB=0.0214595116;QUB=0.0225804450

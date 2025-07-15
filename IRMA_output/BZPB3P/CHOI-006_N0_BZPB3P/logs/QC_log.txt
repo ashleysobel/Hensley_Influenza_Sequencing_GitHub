@@ -1,0 +1,11 @@
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:1	463	435	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:3	449	422	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:2	442	417	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:6	432	410	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:11	385	370	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:5	436	421	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:4	447	429	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:7	459	436	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:9	421	401	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:10	425	398	30	125	1
+/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-006_N0_BZPB3P-SzoniPpXFhBXx0Za5psJqgxdh5hhAfZd/QC_log.txt:8	456	427	30	125	1

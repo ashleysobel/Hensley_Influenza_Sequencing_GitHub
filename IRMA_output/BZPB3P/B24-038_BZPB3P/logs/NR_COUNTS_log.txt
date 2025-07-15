@@ -1,0 +1,4 @@
+/tmp/ashleysobelleonard/IRMAv1.2.0/B24-038_BZPB3P-pKiFwTuTfxVDMKH1KzjUFQZiJ79FCKzN/MATCH/R1.match:0
+/tmp/ashleysobelleonard/IRMAv1.2.0/B24-038_BZPB3P-pKiFwTuTfxVDMKH1KzjUFQZiJ79FCKzN/MATCH/R1.nomatch:4307
+/tmp/ashleysobelleonard/IRMAv1.2.0/B24-038_BZPB3P-pKiFwTuTfxVDMKH1KzjUFQZiJ79FCKzN/MATCH/R1.chim:0
+/tmp/ashleysobelleonard/IRMAv1.2.0/B24-038_BZPB3P-pKiFwTuTfxVDMKH1KzjUFQZiJ79FCKzN/R0.fa:4307

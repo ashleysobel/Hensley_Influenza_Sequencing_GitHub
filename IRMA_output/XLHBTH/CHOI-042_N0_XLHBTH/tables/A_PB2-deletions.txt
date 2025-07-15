@@ -1,0 +1,2 @@
+Reference_Name	Upstream_Position	Length	Context	Called	Count	Total	Frequency	PairedUB
+A_PB2	2215	1	AAAAC-GGACT	FALSE	2	59	0.0338983050847458	0.0955836746291445
