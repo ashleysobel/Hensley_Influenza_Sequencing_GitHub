@@ -30,11 +30,11 @@ if (!dir.exists(user_directory)) {
 # Set working directory
 setwd(user_directory)
 
-# 2.2) Establish list of run IDs (add as needed, e.g. c("XLHBTH", "PJ6FV5"))
+# 2.2) Establish list of run IDs
 # For now, we are including the 3 fastq file folders chosen as our example set: "BZPB3P","PJ6FV5", and "XLHBTH"
-runs <- "V69G9P"
-# runs  <- c( "BZPB3P","PJ6FV5","XLHBTH")
-# runs          <- c("CQ4NSW","D5P8BH","DG2BND","D5P8BH","DH5T5P","KRJS54","PJ6FV5","TJSTJ4","V6BK84","V69G9P","WPGFLD","XLHBTH","4SHM4J")  # Modify as needed
+runs  <- c("PJ6FV5", "BZPB3P", "XLHBTH")
+# runs <- c("2YM3LN","4SHM4J","6HW5TB","BLPBGL","CQ4NSW","D5P8BH","DG2BND","DH5T5P",
+#           "KRJS54","TJSTJ4","TWKG6C","V6BK84","V69G9P","WPGFLD")
 
 # 2.3) Set minimum coverage threshold for masking consensus sequence positions
 min_cov <- 5
@@ -43,7 +43,7 @@ min_cov <- 5
 
 # Set to TRUE to use multicore (parallel) processing for consensus FASTA generation.
 # Set to FALSE to process samples one at a time for easier debugging.
-use_multicore <- FALSE
+use_multicore <- TRUE
 
 # 3) Create required directories -------------------------------------
 
@@ -335,7 +335,8 @@ if (file.access(irma_exec, mode = 1) != 0) {
       lapply(sample_names, process_sample)
     }
     
-    # 7) Build and return coverage summary (unchanged)…
+    # 7) Build and return coverage summary (unchanged)
+    summary_list <- vector("list", length(sample_names))
     for (j in seq_along(sample_names)) {
       samp <- sample_names[j]
       if (!sample_success[j]) {
@@ -533,6 +534,7 @@ for (r in seq_along(runs)) {
     message("Saved summary for run ", run_id, " to ", out_file)
   } else {
     message(sprintf("No summary generated for run %s (see warnings above).", run_id))
+
   }
 }
 
