@@ -89,7 +89,7 @@ You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
 
 3. **Add your FASTQ files**
 
-Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **RunID** (e.g. `PJ6FV5`).
+Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **RunID** (e.g. `PJ6FV5`). The script expects FASTQs named like `<RunID>_… .fastq`. The FASTQs for the specific RunID should be placed in the `Dino_Fastq/Dino_<RunID>/` subfolder.
 
 **Terminal**  
 ```bash
