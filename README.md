@@ -1,6 +1,6 @@
 # README.md
-# Hensley_Influenza_Sequencing_GitHub
-# Influenza Sequencing Pipeline
+## Hensley_Influenza_Sequencing_GitHub
+### Influenza Sequencing Pipeline
 
 **An R-based workflow for processing influenza sequencing data with IRMA.**
 
