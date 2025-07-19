@@ -91,7 +91,8 @@ You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
   
   * Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **Run ID** (e.g. `PJ6FV5`).
 * **Terminal**:
-  ```bash
+
+```bash
 mkdir -p Dino_Fastq/Dino_PJ6FV5
 mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
 ```
