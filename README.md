@@ -88,20 +88,21 @@ git@github.com:ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
 You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
 
 3. **Add your FASTQ files**
-  
-  * Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **Run ID** (e.g. `PJ6FV5`).
-* **Terminal**:
 
-```bash
-mkdir -p Dino_Fastq/Dino_PJ6FV5
-mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
-```
+   Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **Run ID** (e.g. `PJ6FV5`).
 
-* **Finder/RStudio (GUI)**:
-  
-1. In the Files pane, create a folder named `Dino_Fastq/Dino_<RunID>`.
-2. Drag your FASTQ files (`PJ6FV5_*.fastq`) into that folder.
+   - **Terminal**
 
+     ```bash
+     mkdir -p Dino_Fastq/Dino_PJ6FV5
+     mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
+     ```
+
+   - **Finder/RStudio (GUI)**
+
+     1. In the Files pane (bottom‑left), click **New Folder**, name it `Dino_Fastq/Dino_<RunID>`.
+     2. Drag your FASTQ files (`PJ6FV5_*.fastq`) into that folder.
+     
 ## Configure Your Run
 
 Open **Hensley_IRMA_Parallel_Processing.R** and edit these at the top:
