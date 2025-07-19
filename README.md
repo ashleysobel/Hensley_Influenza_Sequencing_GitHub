@@ -29,7 +29,7 @@ Before running the pipeline, make sure you have:
 ├── README.md                      # This file (Markdown)
 ├── project_path.txt               # Contains your project root path
 ├── irma_path.txt                  # Contains full path to IRMA executable
-├── pipeline.R                     # Main R script
+├── Hensley_Influenza_Sequencing_GitHub.R                     # Main R script
 ├── Dino_Fastq/                    # Input FASTQ files
 │   └── Dino_<RunID>/              # e.g. Dino_XLHBTH
 ├── IRMA_output/                   # Pipeline outputs
@@ -129,7 +129,7 @@ The script installs any missing R packages (`parallel`, `renv`, …) automatical
 ### Via RStudio (GUI)
 
 1. Open the project in RStudio.
-2. Open **pipeline.R**.
+2. Open **Hensley_Influenza_Sequencing_GitHub.R**.
 3. Click **Source** (or press Cmd+Shift+S).
 
 ### Via command line
@@ -137,14 +137,14 @@ The script installs any missing R packages (`parallel`, `renv`, …) automatical
 From the project root:
   
   ```bash
-Rscript pipeline.R
+Rscript Hensley_Influenza_Sequencing_GitHub.R
 ```
 
 Or in an interactive R session:
   
   ```r
 setwd(trimws(readLines("project_path.txt", 1)))
-source("pipeline.R")
+source("Hensley_Influenza_Sequencing_GitHub.R")
 ```
 
 
