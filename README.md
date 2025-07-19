@@ -98,10 +98,14 @@ You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
      mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
      ```
 
-   - **Finder/RStudio (GUI)**
+   - **Finder / RStudio (GUI)**
 
-     1. In the Files pane (bottom‑left), click **New Folder**, name it `Dino_Fastq/Dino_<RunID>`.
-     2. Drag your FASTQ files (`PJ6FV5_*.fastq`) into that folder.
+     1. In the **Files** pane (bottom-left), click **New Folder** and name it:
+        ```
+        Dino_Fastq/Dino_<RunID>
+        ```
+     2. Drag your FASTQ files (e.g. `PJ6FV5_*.fastq`) into that folder.
+
      
 ## Configure Your Run
 
