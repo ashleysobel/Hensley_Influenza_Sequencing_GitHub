@@ -81,8 +81,7 @@ git@github.com:ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
 * **irma\_path.txt**
   *Purpose*: tells the R script where to find the IRMA executable.
 *Contents* (example):
-  
-  ```txt
+```txt
 /Users/youruser/code/flu-amd/IRMA
 ```
 
@@ -92,11 +91,11 @@ You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
   
   * Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **Run ID** (e.g. `PJ6FV5`).
 * **Terminal**:
-  
   ```bash
 mkdir -p Dino_Fastq/Dino_PJ6FV5
 mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
-  ```
+```
+
 * **Finder/RStudio (GUI)**:
   
 1. In the Files pane, create a folder named `Dino_Fastq/Dino_<RunID>`.
@@ -106,7 +105,7 @@ mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
 
 Open **Hensley_IRMA_Parallel_Processing.R** and edit these at the top:
   
-  ```r
+```r
 # 2.2) Run IDs (six-character strings)
 runs <- c("PJ6FV5", "BZPB3P", "XLHBTH")
 
@@ -135,13 +134,13 @@ The script installs any missing R packages (`parallel`, `renv`, …) automatical
 
 From the project root:
   
-  ```bash
+```bash
 Rscript Hensley_Influenza_Sequencing_GitHub.R
 ```
 
 Or in an interactive R session:
   
-  ```r
+```r
 setwd(trimws(readLines("project_path.txt", 1)))
 source("Hensley_Influenza_Sequencing_GitHub.R")
 ```
@@ -149,7 +148,7 @@ source("Hensley_Influenza_Sequencing_GitHub.R")
 
 **What it does**:
   
-  1. Creates/verifies directories: `IRMA_output`, `Dino_Fastq`, `session_info`.
+1. Creates/verifies directories: `IRMA_output`, `Dino_Fastq`, `session_info`.
 2. Installs & loads required packages.
 3. Calls IRMA on each FASTQ.
 4. Generates masked/unmasked consensus FASTAs (with HA/NA splits).
@@ -171,15 +170,15 @@ source("Hensley_Influenza_Sequencing_GitHub.R")
 - **IRMA install errors**: On macOS arm64 (M1/M4), installing IRMA via Conda can fail due to missing `blat`. Download the CDC v1.2.0 release ([https://github.com/CDCgov/irma/releases/tag/v1.2.0](https://github.com/CDCgov/irma/releases/tag/v1.2.0)) instead, which bundles all required third-party tools.
 - **Gatekeeper pop‑ups**: macOS may block IRMA’s executables (e.g. `blat`, `pigz`) with “Not Opened” warnings. Avoid this by temporarily disabling Gatekeeper:
 
-  ```bash
+```bash
   sudo spctl --master-disable
-  ```
+```
 
   Or in **System Settings → Privacy & Security → Allow apps downloaded from → Anywhere**. Re-enable with:
 
-  ```bash
+```bash
   sudo spctl --master-enable
-  ```
+```
 - **Per‑binary exceptions**: If you prefer not to disable Gatekeeper globally, right‑click the blocked binary in Finder, select **Open**, then confirm. This creates a persistent exception for that file.
 - **No FASTQ files found**: Ensure FASTQs are named `<RunID>_… .fastq` in the correct subfolder.
 - **Permission denied**: Confirm your IRMA script has execute permission (`chmod +x`).
