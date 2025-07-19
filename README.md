@@ -4,7 +4,7 @@
 
 **An R-based workflow for processing influenza sequencing data with IRMA.**
 
-> **README.md** placed at your repository root—GitHub will render it automatically.
+> **README.md**
 
 ---
 
@@ -51,71 +51,110 @@ Before running the pipeline, make sure you have:
 ---
 
 ## Setup Guide
+1. **Clone the repository**
+  
+  * **Terminal**:
+  
+  ```bash
+git clone https://github.com/ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
+cd Hensley_Influenza_Sequencing_GitHub
+```
+* **RStudio (GUI)**:
+  
+  1. Open RStudio → **File → New Project… → Version Control → Git**
+  2. Repository URL:
+  
+  ```
+git@github.com:ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
+```
+3. Choose or create a local folder → **Create Project**
+  
+  2. **Configure your paths**
+  Create two files in the project root (no quotes, no extra lines):
+  
+  * **project\_path.txt**
+  *Purpose*: tells the R script where your project directory is.
+*Contents* (example):
+  
+  ```txt
+/Users/youruser/code/Hensley_Influenza_Sequencing_GitHub
+```
+* **irma\_path.txt**
+  *Purpose*: tells the R script where to find the IRMA executable.
+*Contents* (example):
+  
+  ```txt
+/Users/youruser/code/flu-amd/IRMA
+```
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   ```
+You can edit these in any text editor (RStudio, TextEdit, VSCode, etc.).
 
-2. **Create configuration files** in the root:
-   - **project_path.txt** (one line):
-     ```txt
-     /full/path/to/your-repo
-     ```
-   - **irma_path.txt** (one line):
-     ```txt
-     /full/path/to/IRMA
-     ```
-
-3. **Add your FASTQ files** under `Dino_Fastq/Dino_<RunID>/`:
-   ```bash
-   mkdir -p Dino_Fastq/Dino_XLHBTH
-   cp /path/to/*.fastq Dino_Fastq/Dino_XLHBTH/
-   ```
-
-4. **Install required R packages** (if prompted):
-   ```r
-   install.packages(c("parallel", "renv"))
-   ```
-
----
+3. **Add your FASTQ files**
+  
+  * Download your FASTQs (e.g. from Plasmidsaurus). Note the six-character **Run ID** (e.g. `PJ6FV5`).
+* **Terminal**:
+  
+  ```bash
+mkdir -p Dino_Fastq/Dino_PJ6FV5
+mv ~/Downloads/PJ6FV5_*.fastq Dino_Fastq/Dino_PJ6FV5/
+  ```
+* **Finder/RStudio (GUI)**:
+  
+1. In the Files pane, create a folder named `Dino_Fastq/Dino_<RunID>`.
+2. Drag your FASTQ files (`PJ6FV5_*.fastq`) into that folder.
 
 ## Configure Your Run
 
-Edit the top of **pipeline.R** to set:
-
-- `runs` &mdash; vector of one or more run IDs:
+Open **Hensley_IRMA_Parallel_Processing.R** and edit these at the top:
+  
   ```r
-  runs <- c("XLHBTH", "ABC123")
-  ```
-- `min_cov` &mdash; integer coverage threshold; bases with coverage `< min_cov` are masked to `N` (default `5`).
-- `use_multicore` &mdash; `TRUE` to speed up masked FASTA generation; `FALSE` to run sequentially.
+# 2.2) Run IDs (six-character strings)
+runs <- c("PJ6FV5", "BZPB3P", "XLHBTH")
 
----
+# 2.3) Coverage threshold (positions with coverage < min_cov mask to "N")
+min_cov <- 5
+
+# 2.4) Parallel processing?
+use_multicore <- TRUE  # TRUE = faster, FALSE = single-threaded
+```
 
 ## How to Run
 
-From a terminal in the project root:
-```bash
+This repo is intended to run through RStudio. A version of this repo intended to run Docker is in process. Please check back later.
+
+### Automatic package installation
+
+The script installs any missing R packages (`parallel`, `renv`, …) automatically.
+
+### Via RStudio (GUI)
+
+1. Open the project in RStudio.
+2. Open **pipeline.R**.
+3. Click **Source** (or press Cmd+Shift+S).
+
+### Via command line
+
+From the project root:
+  
+  ```bash
 Rscript pipeline.R
 ```
 
-Or inside an R session:
-```r
+Or in an interactive R session:
+  
+  ```r
 setwd(trimws(readLines("project_path.txt", 1)))
 source("pipeline.R")
 ```
 
-The script will:
 
-1. Verify or create required directories.
-2. Load IRMA and R packages.
-3. Run IRMA on each FASTQ sample.
-4. Generate masked and unmasked consensus FASTAs.
-5. Produce separate HA/NA masked FASTAs.
-6. Summarize coverage, logging any missing segments.
-
+**What it does**:
+  
+  1. Creates/verifies directories: `IRMA_output`, `Dino_Fastq`, `session_info`.
+2. Installs & loads required packages.
+3. Calls IRMA on each FASTQ.
+4. Generates masked/unmasked consensus FASTAs (with HA/NA splits).
+5. Writes `<RunID>_coverage_summary.csv` and log files.
 ---
 
 ## Results & Outputs
@@ -130,9 +169,23 @@ The script will:
 
 ## Troubleshooting
 
+- **IRMA install errors**: On macOS arm64 (M1/M4), installing IRMA via Conda can fail due to missing `blat`. Download the CDC v1.2.0 release ([https://github.com/CDCgov/irma/releases/tag/v1.2.0](https://github.com/CDCgov/irma/releases/tag/v1.2.0)) instead, which bundles all required third-party tools.
+- **Gatekeeper pop‑ups**: macOS may block IRMA’s executables (e.g. `blat`, `pigz`) with “Not Opened” warnings. Avoid this by temporarily disabling Gatekeeper:
+
+  ```bash
+  sudo spctl --master-disable
+  ```
+
+  Or in **System Settings → Privacy & Security → Allow apps downloaded from → Anywhere**. Re-enable with:
+
+  ```bash
+  sudo spctl --master-enable
+  ```
+- **Per‑binary exceptions**: If you prefer not to disable Gatekeeper globally, right‑click the blocked binary in Finder, select **Open**, then confirm. This creates a persistent exception for that file.
 - **No FASTQ files found**: Ensure FASTQs are named `<RunID>_… .fastq` in the correct subfolder.
 - **Permission denied**: Confirm your IRMA script has execute permission (`chmod +x`).
 - **Empty consensus**: Inspect `session_info/missing_segments_<RunID>.log` for missing segments.
+
 
 ---
 

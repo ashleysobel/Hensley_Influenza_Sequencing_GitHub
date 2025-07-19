@@ -32,7 +32,7 @@ setwd(user_directory)
 
 # 2.2) Establish list of run IDs
 # For now, we are including the 3 fastq file folders chosen as our example set: "BZPB3P","PJ6FV5", and "XLHBTH"
-runs  <- c("PJ6FV5", "BZPB3P", "XLHBTH")
+runs  <- c("PJ6FV5")
 # runs <- c("2YM3LN","4SHM4J","6HW5TB","BLPBGL","CQ4NSW","D5P8BH","DG2BND","DH5T5P",
 #           "KRJS54","TJSTJ4","TWKG6C","V6BK84","V69G9P","WPGFLD")
 
@@ -111,23 +111,19 @@ if (!dir.exists(session_dir)) {
 
 # 4.1) Ensure packages exist and are loaded 
 # Define all packages needed and load/install them via a single vector
-required_pkgs <- c("parallel", "renv")  # Add any others you use
 
-# Check for missing packages
-missing_pkgs <- required_pkgs[!sapply(required_pkgs, requireNamespace, quietly = TRUE)]
-if (length(missing_pkgs) > 0) {
-  stop("The following required packages are missing: ", paste(missing_pkgs, collapse = ", "),
-       ". Please install them before running the pipeline.")
+required_pkgs <- c("parallel", "renv") 
+installed    <- rownames(installed.packages())
+to_install   <- setdiff(required_pkgs, installed)
+if (length(to_install)) {
+  install.packages(to_install)
 }
+invisible(lapply(required_pkgs, library, character.only = TRUE))
 
-# Load all required packages
-lapply(required_pkgs, function(pkg) library(pkg, character.only = TRUE))
-
-# 4.2) Generate citation information for the loaded packages 
-# Write out BibTeX citations for all required packages
+# 4.2) Save BibTeX citations
 all_citations <- sapply(required_pkgs, function(pkg) utils::toBibtex(citation(pkg)))
 writeLines(paste(all_citations, collapse = "\n\n"),
-           con = file.path(user_directory, "pipeline_processing_citations.bib"))
+           file.path(user_directory, "pipeline_processing_citations.bib"))
 
 # 5) Define IRMA executable path -------------------------------------------------
 
