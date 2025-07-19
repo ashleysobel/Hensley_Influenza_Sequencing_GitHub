@@ -55,7 +55,7 @@ Before running the pipeline, make sure you have:
   
   * **Terminal**:
   
-  ```bash
+```bash
 git clone https://github.com/ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
 cd Hensley_Influenza_Sequencing_GitHub
 ```
