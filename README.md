@@ -63,8 +63,7 @@ cd Hensley_Influenza_Sequencing_GitHub
   
   1. Open RStudio → **File → New Project… → Version Control → Git**
   2. Repository URL:
-  
-  ```
+```
 git@github.com:ashleysobel/Hensley_Influenza_Sequencing_GitHub.git
 ```
 3. Choose or create a local folder → **Create Project**
