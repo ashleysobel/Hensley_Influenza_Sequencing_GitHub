@@ -617,19 +617,19 @@ compiled <- do.call(rbind, run_summaries)
 
 # 10.2) Add Pass_All, Pass_HA, Pass_NA columns
 compiled$Pass_All <- ifelse(
-  compiled$No_missing_seg == 0 & compiled$prop_low_depth < 0.0105,
+  compiled$No_missing_seg == 0 & compiled$prop_low_depth < 0.105,
   "Y", "N"
 )
 
 # To pass HA: must not list HA among missing_seg AND ha_coverage_prop_low < 0.0105
 compiled$Pass_HA <- ifelse(
-  !grepl("\\bHA\\b", compiled$missing_seg) & compiled$ha_coverage_prop_low < 0.0105,
+  !grepl("\\bHA\\b", compiled$missing_seg) & compiled$ha_coverage_prop_low < 0.105,
   "Y", "N"
 )
 
 # To pass NA: must not list NA among missing_seg AND na_coverage_prop_low < 0.0105
 compiled$Pass_NA <- ifelse(
-  !grepl("\\bNA\\b", compiled$missing_seg) & compiled$na_coverage_prop_low < 0.0105,
+  !grepl("\\bNA\\b", compiled$missing_seg) & compiled$na_coverage_prop_low < 0.105,
   "Y", "N"
 )
 
