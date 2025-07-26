@@ -359,11 +359,11 @@ process_run <- function(library_id, min_cov, fastq_dir, log_file = NULL, use_par
     ha_depths <- unlist(lapply(ha_cov_files, function(f) {
       df <- read.delim(f, check.names = FALSE); df[["Coverage Depth"]]
     }))
-    ha_prop <- if (length(ha_depths)>0) mean(ha_depths >= 10, na.rm = TRUE) else NA_real_
+    ha_prop <- if (length(ha_depths)>0) mean(ha_depths >= min_cov, na.rm = TRUE) else NA_real_
     na_depths <- unlist(lapply(na_cov_files, function(f) {
       df <- read.delim(f, check.names = FALSE); df[["Coverage Depth"]]
     }))
-    na_prop <- if (length(na_depths)>0) mean(na_depths >= 10, na.rm = TRUE) else NA_real_
+    na_prop <- if (length(na_depths)>0) mean(na_depths >= min_cov, na.rm = TRUE) else NA_real_
     ha_files <- list.files(file.path(output_base, samp), pattern = "_HA_H[0-9]+\\.bam$", full.names = FALSE)
     na_files <- list.files(file.path(output_base, samp), pattern = "_NA_N[0-9]+\\.bam$", full.names = FALSE)
     ha_tag <- if (length(ha_files)) sub(".*_HA_(H[0-9]+)\\..*", "\\1", ha_files[1]) else NA_character_
@@ -617,7 +617,7 @@ compiled <- do.call(rbind, run_summaries)
 
 # 10.2) Add Pass_All, Pass_HA, Pass_NA columns
 compiled$Pass_All <- ifelse(
-  compiled$No_missing_seg == 0 & compiled$prop_low_depth < 0.105,
+  compiled$No_missing_seg == 0 & compiled$prop_low_depth < 10.5,
   "Y", "N"
 )
 
