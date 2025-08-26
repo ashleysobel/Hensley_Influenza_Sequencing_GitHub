@@ -1,3 +1,0 @@
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-018_N0_XLHBTH-z3pdDvoflpNspfI1iQuqyRR94MyhOx30/QC_log.txt:3	269	253	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-018_N0_XLHBTH-z3pdDvoflpNspfI1iQuqyRR94MyhOx30/QC_log.txt:1	680	632	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-018_N0_XLHBTH-z3pdDvoflpNspfI1iQuqyRR94MyhOx30/QC_log.txt:2	642	606	30	125	1

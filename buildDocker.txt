@@ -1,0 +1,34 @@
+# Build docker image
+docker build -t fluirma . 
+
+# Ensure correct built 
+docker run --rm \
+  -v "$PWD:/work" -w /opt/app fluirma -h 
+
+# Test run without mounting
+docker run --rm --entrypoint /opt/app/test.sh fluirma
+
+# Run container on local input and output
+# Need to mount WD to container path
+INPUT_DIR="$PWD/test/Dino_Fastq"
+OUTPUT_DIR="$PWD/tmp"
+
+docker run --rm \
+  -v "$PWD:/work" -w /work \
+  fluirma \
+  -o "/work/$(basename "$OUTPUT_DIR")" \
+  -f "/work/$(basename "$INPUT_DIR")" \
+  --runs "BZPB3P" \
+  --min_cov 5
+
+docker tag fluirma tianyuclu/hensley_lab_flu_pipeline:1.0
+docker push tianyuclu/hensley_lab_flu_pipeline:1.0
+
+
+# Install docker image on new machine
+docker pull tianyuclu/hensley_lab_flu_pipeline:1.0
+
+docker run --rm \
+  -v "$PWD:/work" -w /opt/app tianyuclu/hensley_lab_flu_pipeline:1.0 -h 
+
+docker run --rm --entrypoint /opt/app/test.sh tianyuclu/hensley_lab_flu_pipeline:1.0

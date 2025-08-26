@@ -1,4 +1,0 @@
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N3_BZPB3P-DKx0OcqJz3PSHC6YNceE5mVQH5ET8nnM/MATCH/R1.match:0
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N3_BZPB3P-DKx0OcqJz3PSHC6YNceE5mVQH5ET8nnM/MATCH/R1.nomatch:4344
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N3_BZPB3P-DKx0OcqJz3PSHC6YNceE5mVQH5ET8nnM/MATCH/R1.chim:1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-005_N3_BZPB3P-DKx0OcqJz3PSHC6YNceE5mVQH5ET8nnM/R0.fa:4345

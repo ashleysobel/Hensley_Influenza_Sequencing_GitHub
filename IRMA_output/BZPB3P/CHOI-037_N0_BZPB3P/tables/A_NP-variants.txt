@@ -1,2 +1,0 @@
-Reference_Name	Position	Total	Consensus_Allele	Minority_Allele	Consensus_Count	Minority_Count	Consensus_Frequency	Minority_Frequency	Consensus_Average_Quality	Minority_Average_Quality	ConfidenceNotMacErr	PairedUB	QualityUB	Phase
-A_NP	1385	172	G	A	163	8	0.947674418604651	0.0465116279069767	28.3742331288344	30.625	0.981381767047759	0.034043286090491	0.0363083118784968	1

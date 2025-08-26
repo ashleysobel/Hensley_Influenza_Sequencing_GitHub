@@ -1,2 +1,0 @@
-Reference_Name	Position	Total	Consensus_Allele	Minority_Allele	Consensus_Count	Minority_Count	Consensus_Frequency	Minority_Frequency	Consensus_Average_Quality	Minority_Average_Quality	ConfidenceNotMacErr	PairedUB	QualityUB	Phase
-A_HA_H1	1356	287	G	A	279	8	0.97212543554007	0.0278745644599303	37.1397849462366	37	0.992841996445049	0.0205735917454677	0.0211141658296469	1

@@ -1,4 +1,0 @@
-Reference_Name	Upstream_Position	Length	Context	Called	Count	Total	Frequency	PairedUB
-A_PA	1194	1	AGCCA-AGCCC	FALSE	2	10	0.2	0.463712303971536
-A_PA	1872	1	AGTCA-CCAGG	FALSE	2	10	0.2	0.463712303971536
-A_PA	1948	28	TCTAT----------------------------AGCTG	FALSE	4	16	0.25	0.312021688346588

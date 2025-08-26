@@ -1,4 +1,0 @@
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOX_XLHBTH-RefADYFlHi7iXs03IBplHuBvNn2WYyjq/MATCH/R1.match:0
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOX_XLHBTH-RefADYFlHi7iXs03IBplHuBvNn2WYyjq/MATCH/R1.nomatch:33
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOX_XLHBTH-RefADYFlHi7iXs03IBplHuBvNn2WYyjq/MATCH/R1.chim:0
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOX_XLHBTH-RefADYFlHi7iXs03IBplHuBvNn2WYyjq/R0.fa:33

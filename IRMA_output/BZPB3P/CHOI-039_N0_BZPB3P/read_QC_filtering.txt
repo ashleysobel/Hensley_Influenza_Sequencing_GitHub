@@ -1,9 +1,0 @@
-Interleaved sample	Starting reads	QC'd reads	Quality threshold	Min length	Use median
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:1	613	567	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:8	515	494	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:2	640	597	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:3	570	541	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:5	582	553	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:4	600	572	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:6	595	560	30	125	1
-/tmp/ashleysobelleonard/IRMAv1.2.0/CHOI-039_N0_BZPB3P-yaIRayHRQ7lw8gv1giM9DQXyXbzQh15c/QC_log.txt:7	591	556	30	125	1
